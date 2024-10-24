@@ -112,6 +112,15 @@ function createPrompt(file, chunk, prDetails) {
 - Provide comments and suggestions ONLY if there is something to improve, otherwise "reviews" should be an empty array.
 - Write the comment in GitHub Markdown format.
 - Use the given description only for the overall context and only comment the code.
+- @if syntax in angular views is valid
+  Example:
+  @if (a > b) {
+    {{a}} is greater than {{b}}
+  } @else if (b > a) {
+    {{a}} is less than {{b}}
+  } @else {
+    {{a}} is equal to {{b}}
+  }
 - IMPORTANT: NEVER suggest adding comments to the code.
 
 Review the following code diff in the file "${file.to}" and take the pull request title and description into account when writing the response.
