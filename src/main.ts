@@ -147,6 +147,8 @@ async function getAIResponse(prompt: string): Promise<Array<{
       ],
     });
 
+    console.log("Response:", response.choices[0].message?.content?.trim());
+
     const res = response.choices[0].message?.content?.trim() || "{}";
     return JSON.parse(res).reviews;
   } catch (error) {
