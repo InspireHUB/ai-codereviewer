@@ -121,6 +121,7 @@ function createPrompt(file, chunk, prDetails) {
   } @else {
     {{a}} is equal to {{b}}
   }
+- Don't suggest injection be done in the constructor instead of using the inject function.
 - IMPORTANT: NEVER suggest adding comments to the code.
 
 Review the following code diff in the file "${file.to}" and take the pull request title and description into account when writing the response.
